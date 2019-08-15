@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<title>Ajax File-Upload</title>
+</head>
+<body>
+  <form action="/" method="post" enctype="multipart/form-data" id="upload--files">
+    <div>
+      <input id="files" type="file" name="datafile"/>
+      <input type="button" value="Upload" id="upload-button-id" disabled="disabled"/></p>
+    <div>
+      <label>Other field: <input name="another--field" type="text" id="another--field"/></label>
+    </div>
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
+    <div>
+      <p id="status--upload"></p>
+      <p id="progress"></p>
+      <pre id="result"></pre>
+    </div>
+  </form>
+  <script src="./src/script.js"></script>
+</body>
+</html>
